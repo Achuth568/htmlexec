@@ -1,0 +1,58 @@
+body {
+    /* Set up the background image */
+    background-image: url('https://img.freepik.com/free-photo/back-school-decoration-with-pencils-calculator-space_23-2147662344.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.calculator {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Subtle shadow for a 3D effect */
+}
+
+.display {
+    background: linear-gradient(145deg, #cacaca, #f0f0f0); /* Subtle 3D gradient */
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: right;
+    font-size: 2rem;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.5rem;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff); /* Button gradient */
+    box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff; /* 3D effect */
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+}
+
+.clear, .divide, .multiply, .delete, .subtract, .add, .equal {
+    background: linear-gradient(145deg, #ff7e5f, #feb47b); /* Special buttons gradient */
+}
+
+.zero, .decimal {
+    grid-column: span 2; /* Make zero and decimal buttons wider */
+}
+
